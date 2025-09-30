@@ -15,6 +15,11 @@ applyTo: '**/.py
 - Do not use wildcard import
 - For `__init_.py` , do not use `__all__`  but append `#ruff: noqa: F401` to import to suppress unused import warning
 
+## Function order
+Follow these rules to order functions/methods in a file/class, the earlier the higher priority:
+1. public methods should be placed before private methods
+2. caller methods should be placed before callee methods
+
 # Readability
 
 ## Docstrings
