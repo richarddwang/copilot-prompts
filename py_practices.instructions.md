@@ -11,7 +11,7 @@ applyTo: '**/.py
 
 ## Import
 - All import should be on top of the file
-- Use relative import for module under the same directory, otherwise use absolute import
+- For non-testing code, use relative import for module under the same directory, otherwise use absolute import.
 - Do not use wildcard import
 - For `__init_.py` , do not use `__all__`  but append `#ruff: noqa: F401` to import to suppress unused import warning
 
